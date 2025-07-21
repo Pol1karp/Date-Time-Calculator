@@ -49,7 +49,7 @@ namespace Date_Time_Calculator
                             $"- Секунд: {totalSeconds}\n" +
                             $"- Миллисекунд: {totalMilliseconds}";
 
-            guna2HtmlLabel1.Text = result;
+            guna2TextBox1.Text = result;
         }
     }
 }
