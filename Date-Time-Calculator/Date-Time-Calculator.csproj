@@ -72,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeConverter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimeConverter.Designer.cs">
+      <DependentUpon>TimeConverter.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorkingDaysCounter.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -96,6 +102,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TimeConverter.resx">
+      <DependentUpon>TimeConverter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkingDaysCounter.resx">
       <DependentUpon>WorkingDaysCounter.cs</DependentUpon>
     </EmbeddedResource>

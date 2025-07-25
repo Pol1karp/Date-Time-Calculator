@@ -115,6 +115,7 @@
             this.guna2Button5.Size = new System.Drawing.Size(222, 51);
             this.guna2Button5.TabIndex = 12;
             this.guna2Button5.Text = "Time Converter";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2Button4
             // 

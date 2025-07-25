@@ -50,5 +50,10 @@ namespace Date_Time_Calculator
             long unixTimestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
             guna2HtmlLabel3.Text = $"Unix Timestamp: {unixTimestamp}";
         }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            LoadControl(new TimeConverter());
+        }
     }
 }
