@@ -27,6 +27,12 @@ namespace Date_Time_Calculator
                 MessageBox.Show("Конечная дата должна быть позже начальной.");
                 return;
             }
+            if (start > end)
+            {
+                DateTime temp = start;
+                start = end;
+                end = temp;
+            }
 
             TimeSpan diff = end - start;
 
