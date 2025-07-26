@@ -39,12 +39,6 @@ namespace Date_Time_Calculator
         {
             LoadControl(new LeepCounter());
         }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             long unixTimestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
@@ -58,7 +52,12 @@ namespace Date_Time_Calculator
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-            LoadControl(new TimeConverter());
+            LoadControl(new BirthdayInformer());
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            guna2Panel3.Controls.Clear();
         }
     }
 }
