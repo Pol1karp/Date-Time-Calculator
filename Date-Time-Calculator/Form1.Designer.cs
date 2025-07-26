@@ -140,6 +140,7 @@
             this.guna2Button6.Size = new System.Drawing.Size(222, 51);
             this.guna2Button6.TabIndex = 13;
             this.guna2Button6.Text = "Birthday Informer";
+            this.guna2Button6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // guna2Button5
@@ -156,6 +157,7 @@
             this.guna2Button5.Size = new System.Drawing.Size(222, 51);
             this.guna2Button5.TabIndex = 12;
             this.guna2Button5.Text = "Time Converter";
+            this.guna2Button5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2Button4
@@ -169,9 +171,11 @@
             this.guna2Button4.ForeColor = System.Drawing.SystemColors.MenuText;
             this.guna2Button4.Location = new System.Drawing.Point(3, 148);
             this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.guna2Button4.Size = new System.Drawing.Size(222, 51);
             this.guna2Button4.TabIndex = 11;
             this.guna2Button4.Text = "Leap Counter";
+            this.guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Button3
@@ -188,6 +192,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(222, 51);
             this.guna2Button3.TabIndex = 10;
             this.guna2Button3.Text = "2Date Working Counter";
+            this.guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2HtmlLabel4
@@ -215,6 +220,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(222, 51);
             this.guna2Button2.TabIndex = 9;
             this.guna2Button2.Text = "2Date Соmparer";
+            this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Panel3
