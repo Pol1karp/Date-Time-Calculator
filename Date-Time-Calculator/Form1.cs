@@ -24,7 +24,15 @@ namespace Date_Time_Calculator
             uc.Dock = DockStyle.Fill;           
             guna2Panel3.Controls.Add(uc);         
         }
-
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            long unixTimestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+            guna2HtmlLabel3.Text = $"Unix Timestamp: {unixTimestamp}";
+        }
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            guna2Panel3.Controls.Clear();
+        }
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             LoadControl(new DateComparer());
@@ -39,12 +47,7 @@ namespace Date_Time_Calculator
         {
             LoadControl(new LeepCounter());
         }
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            long unixTimestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
-            guna2HtmlLabel3.Text = $"Unix Timestamp: {unixTimestamp}";
-        }
-
+        
         private void guna2Button5_Click(object sender, EventArgs e)
         {
             LoadControl(new TimeConverter());
@@ -53,11 +56,6 @@ namespace Date_Time_Calculator
         private void guna2Button6_Click(object sender, EventArgs e)
         {
             LoadControl(new BirthdayInformer());
-        }
-
-        private void guna2Button7_Click(object sender, EventArgs e)
-        {
-            guna2Panel3.Controls.Clear();
-        }
+        } 
     }
 }
