@@ -36,6 +36,13 @@ namespace Date_Time_Calculator
             int seconds = (int)life.TotalSeconds;
             long milliseconds = (long)(life.TotalMilliseconds);
 
+
+            DateTime nextBirthday = new DateTime(now.Year, birthdate.Month, birthdate.Day);
+            if (nextBirthday < now)
+                nextBirthday = nextBirthday.AddYears(1);
+            TimeSpan untilNextBirthday = nextBirthday - now;
+
+
         }
     }
 }
