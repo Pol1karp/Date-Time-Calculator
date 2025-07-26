@@ -42,7 +42,18 @@ namespace Date_Time_Calculator
                 nextBirthday = nextBirthday.AddYears(1);
             TimeSpan untilNextBirthday = nextBirthday - now;
 
+            DateTime birthday18 = birthdate.AddYears(18);
+            string eighteenInfo;
 
+            if (now < birthday18)
+            {
+                TimeSpan until18 = birthday18 - now;
+                eighteenInfo = $"До 18 лет: {until18.Days} дн., {until18.Hours} ч.";
+            }
+            else
+            {
+                eighteenInfo = "Уже исполнилось 18";
+            }
         }
     }
 }
