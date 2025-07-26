@@ -55,5 +55,10 @@ namespace Date_Time_Calculator
         {
             LoadControl(new TimeConverter());
         }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            LoadControl(new TimeConverter());
+        }
     }
 }

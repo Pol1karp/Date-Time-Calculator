@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BirthdayInformer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BirthdayInformer.Designer.cs">
+      <DependentUpon>BirthdayInformer.cs</DependentUpon>
+    </Compile>
     <Compile Include="DateComparer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="WorkingDaysCounter.Designer.cs">
       <DependentUpon>WorkingDaysCounter.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BirthdayInformer.resx">
+      <DependentUpon>BirthdayInformer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DateComparer.resx">
       <DependentUpon>DateComparer.cs</DependentUpon>
     </EmbeddedResource>
