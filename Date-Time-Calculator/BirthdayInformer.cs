@@ -54,6 +54,9 @@ namespace Date_Time_Calculator
             {
                 eighteenInfo = "Уже исполнилось 18";
             }
+             
+            DateTime birthdayN = birthdate.AddYears(targetAge);
+            TimeSpan untilTarget = birthdayN - now;
         }
     }
 }
