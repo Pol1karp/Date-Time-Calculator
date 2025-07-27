@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -63,36 +64,8 @@ namespace Date_Time_Calculator
         {
 
         }
-        public void ApplyTheme(bool dark)
-        {
-            Color backColor;
-            Color foreColor;
-            Color buttonColor;
+       
 
-            if (dark)
-            {
-                backColor = Color.FromArgb(30, 30, 30);
-                foreColor = Color.White;
-                buttonColor = Color.DimGray;
-            }
-            else
-            {
-                backColor = Color.White;
-                foreColor = Color.Black;
-                buttonColor = Color.LightGray;
-            }
-
-            this.BackColor = backColor;
-
-            guna2HtmlLabel1.ForeColor = foreColor;
-            guna2HtmlLabel2.ForeColor = foreColor;
-            guna2HtmlLabel3.ForeColor = foreColor;
-            guna2Button1.FillColor = buttonColor;
-            guna2Button1.ForeColor = foreColor;
-
-            guna2Button1.FillColor = buttonColor;
-            guna2Button1.ForeColor = foreColor;
-        }
 
     }
 }
