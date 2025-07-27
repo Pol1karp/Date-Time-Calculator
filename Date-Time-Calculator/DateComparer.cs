@@ -20,8 +20,8 @@ namespace Date_Time_Calculator
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            DateTime start = guna2DateTimePicker1.Value;
-            DateTime end = guna2DateTimePicker2.Value;
+            DateTime start = FirstDate.Value;
+            DateTime end = SecondDate.Value;
 
             if (end < start)
             {
@@ -57,7 +57,7 @@ namespace Date_Time_Calculator
                             $"- Секунд: {totalSeconds}\n" +
                             $"- Миллисекунд: {totalMilliseconds}";
 
-            guna2TextBox1.Text = result;
+            OutputTextBox.Text = result;
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)

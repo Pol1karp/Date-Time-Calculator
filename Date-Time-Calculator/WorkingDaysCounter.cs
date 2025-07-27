@@ -19,8 +19,8 @@ namespace Date_Time_Calculator
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            DateTime start = guna2DateTimePicker1.Value.Date;
-            DateTime end = guna2DateTimePicker2.Value.Date;
+            DateTime start = FirstDate.Value.Date;
+            DateTime end = SecondDate.Value.Date;
 
             if (start > end)
             {
@@ -31,13 +31,13 @@ namespace Date_Time_Calculator
 
             HashSet<DayOfWeek> selectedDays = new HashSet<DayOfWeek>();
 
-            if (guna2CheckBox1.Checked) selectedDays.Add(DayOfWeek.Monday);
-            if (guna2CheckBox2.Checked) selectedDays.Add(DayOfWeek.Tuesday);
-            if (guna2CheckBox3.Checked) selectedDays.Add(DayOfWeek.Wednesday);
-            if (guna2CheckBox4.Checked) selectedDays.Add(DayOfWeek.Thursday);
-            if (guna2CheckBox5.Checked) selectedDays.Add(DayOfWeek.Friday);
-            if (guna2CheckBox6.Checked) selectedDays.Add(DayOfWeek.Saturday);
-            if (guna2CheckBox7.Checked) selectedDays.Add(DayOfWeek.Sunday);
+            if (IfMonday.Checked) selectedDays.Add(DayOfWeek.Monday);
+            if (IfTuesday.Checked) selectedDays.Add(DayOfWeek.Tuesday);
+            if (IfWensday.Checked) selectedDays.Add(DayOfWeek.Wednesday);
+            if (IfThursday.Checked) selectedDays.Add(DayOfWeek.Thursday);
+            if (IfFriday.Checked) selectedDays.Add(DayOfWeek.Friday);
+            if (IfSutarday.Checked) selectedDays.Add(DayOfWeek.Saturday);
+            if (IfSunday.Checked) selectedDays.Add(DayOfWeek.Sunday);
 
             int workDays = 0;
 
@@ -49,7 +49,7 @@ namespace Date_Time_Calculator
                 }
             }
 
-            guna2TextBox1.Text = $"Рабочих дней: {workDays}";
+            OutputTextBox.Text = $"Рабочих дней: {workDays}";
         }
 
 
