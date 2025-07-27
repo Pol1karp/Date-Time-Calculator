@@ -29,116 +29,116 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2NumericUpDown2 = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.TitelLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.OutputTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.BDateLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.StartButton = new Guna.UI2.WinForms.Guna2Button();
+            this.InputBirthDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.AgeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.InputAge = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InputAge)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2HtmlLabel1
+            // TitelLabel
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(219, 23);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(121, 22);
-            this.guna2HtmlLabel1.TabIndex = 29;
-            this.guna2HtmlLabel1.Text = "BirthdayInformer";
+            this.TitelLabel.BackColor = System.Drawing.Color.Transparent;
+            this.TitelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TitelLabel.Location = new System.Drawing.Point(219, 23);
+            this.TitelLabel.Name = "TitelLabel";
+            this.TitelLabel.Size = new System.Drawing.Size(121, 22);
+            this.TitelLabel.TabIndex = 29;
+            this.TitelLabel.Text = "BirthdayInformer";
             // 
-            // guna2TextBox1
+            // OutputTextBox
             // 
-            this.guna2TextBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(39, 309);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Multiline = true;
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.ReadOnly = true;
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(528, 270);
-            this.guna2TextBox1.TabIndex = 28;
+            this.OutputTextBox.BackColor = System.Drawing.SystemColors.Control;
+            this.OutputTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.OutputTextBox.DefaultText = "";
+            this.OutputTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.OutputTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.OutputTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.OutputTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.OutputTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.OutputTextBox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.OutputTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.OutputTextBox.Location = new System.Drawing.Point(39, 309);
+            this.OutputTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OutputTextBox.Multiline = true;
+            this.OutputTextBox.Name = "OutputTextBox";
+            this.OutputTextBox.PlaceholderText = "";
+            this.OutputTextBox.ReadOnly = true;
+            this.OutputTextBox.SelectedText = "";
+            this.OutputTextBox.Size = new System.Drawing.Size(528, 270);
+            this.OutputTextBox.TabIndex = 28;
             // 
-            // guna2HtmlLabel2
+            // BDateLabel
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(39, 102);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(236, 22);
-            this.guna2HtmlLabel2.TabIndex = 26;
-            this.guna2HtmlLabel2.Text = "Введите свою дату рождения:";
+            this.BDateLabel.BackColor = System.Drawing.Color.Transparent;
+            this.BDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BDateLabel.Location = new System.Drawing.Point(39, 102);
+            this.BDateLabel.Name = "BDateLabel";
+            this.BDateLabel.Size = new System.Drawing.Size(236, 22);
+            this.BDateLabel.TabIndex = 26;
+            this.BDateLabel.Text = "Введите свою дату рождения:";
             // 
-            // guna2Button1
+            // StartButton
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Gray;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(191, 257);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(200, 45);
-            this.guna2Button1.TabIndex = 25;
-            this.guna2Button1.Text = "Ок";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.StartButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.StartButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.StartButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.StartButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.StartButton.FillColor = System.Drawing.Color.Gray;
+            this.StartButton.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.StartButton.ForeColor = System.Drawing.Color.White;
+            this.StartButton.Location = new System.Drawing.Point(191, 257);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(200, 45);
+            this.StartButton.TabIndex = 25;
+            this.StartButton.Text = "Ок";
+            this.StartButton.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // guna2DateTimePicker1
+            // InputBirthDate
             // 
-            this.guna2DateTimePicker1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.SystemColors.ButtonShadow;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(39, 130);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
-            this.guna2DateTimePicker1.TabIndex = 23;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2025, 7, 20, 0, 1, 0, 0);
+            this.InputBirthDate.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.InputBirthDate.Checked = true;
+            this.InputBirthDate.FillColor = System.Drawing.SystemColors.ButtonShadow;
+            this.InputBirthDate.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
+            this.InputBirthDate.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.InputBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.InputBirthDate.Location = new System.Drawing.Point(39, 130);
+            this.InputBirthDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.InputBirthDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.InputBirthDate.Name = "InputBirthDate";
+            this.InputBirthDate.Size = new System.Drawing.Size(200, 36);
+            this.InputBirthDate.TabIndex = 23;
+            this.InputBirthDate.Value = new System.DateTime(2025, 7, 20, 0, 1, 0, 0);
             // 
-            // guna2HtmlLabel3
+            // AgeLabel
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(39, 187);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(154, 22);
-            this.guna2HtmlLabel3.TabIndex = 30;
-            this.guna2HtmlLabel3.Text = "Введите возрост N:";
+            this.AgeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.AgeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AgeLabel.Location = new System.Drawing.Point(39, 187);
+            this.AgeLabel.Name = "AgeLabel";
+            this.AgeLabel.Size = new System.Drawing.Size(154, 22);
+            this.AgeLabel.TabIndex = 30;
+            this.AgeLabel.Text = "Введите возрост N:";
             // 
-            // guna2NumericUpDown2
+            // InputAge
             // 
-            this.guna2NumericUpDown2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2NumericUpDown2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2NumericUpDown2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2NumericUpDown2.Location = new System.Drawing.Point(39, 215);
-            this.guna2NumericUpDown2.Minimum = new decimal(new int[] {
+            this.InputAge.BackColor = System.Drawing.Color.Transparent;
+            this.InputAge.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.InputAge.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.InputAge.Location = new System.Drawing.Point(39, 215);
+            this.InputAge.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.guna2NumericUpDown2.Name = "guna2NumericUpDown2";
-            this.guna2NumericUpDown2.Size = new System.Drawing.Size(230, 36);
-            this.guna2NumericUpDown2.TabIndex = 31;
-            this.guna2NumericUpDown2.Value = new decimal(new int[] {
+            this.InputAge.Name = "InputAge";
+            this.InputAge.Size = new System.Drawing.Size(230, 36);
+            this.InputAge.TabIndex = 31;
+            this.InputAge.Value = new decimal(new int[] {
             33,
             0,
             0,
@@ -154,16 +154,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.guna2NumericUpDown2);
-            this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.InputAge);
+            this.Controls.Add(this.AgeLabel);
+            this.Controls.Add(this.TitelLabel);
+            this.Controls.Add(this.OutputTextBox);
+            this.Controls.Add(this.BDateLabel);
+            this.Controls.Add(this.StartButton);
+            this.Controls.Add(this.InputBirthDate);
             this.Name = "BirthdayInformer";
             this.Size = new System.Drawing.Size(606, 583);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InputAge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,13 +171,13 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2NumericUpDown guna2NumericUpDown2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel TitelLabel;
+        private Guna.UI2.WinForms.Guna2TextBox OutputTextBox;
+        private Guna.UI2.WinForms.Guna2HtmlLabel BDateLabel;
+        private Guna.UI2.WinForms.Guna2Button StartButton;
+        private Guna.UI2.WinForms.Guna2DateTimePicker InputBirthDate;
+        private Guna.UI2.WinForms.Guna2HtmlLabel AgeLabel;
+        private Guna.UI2.WinForms.Guna2NumericUpDown InputAge;
         private System.Windows.Forms.Timer timer1;
     }
 }

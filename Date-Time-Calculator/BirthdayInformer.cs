@@ -24,9 +24,9 @@ namespace Date_Time_Calculator
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            DateTime birthdate = guna2DateTimePicker1.Value.Date;
+            DateTime birthdate = InputBirthDate.Value.Date;
             DateTime now = DateTime.Now;
-            int targetAge = (int)guna2NumericUpDown2.Value;
+            int targetAge = (int)InputAge.Value;
 
             TimeSpan life = now - birthdate;
             int years = (int)(life.TotalDays / 365.25);
@@ -69,7 +69,7 @@ namespace Date_Time_Calculator
                     $"{eighteenInfo}\r\n" +
                     $"До N  возроста {targetAge} лет: {untilTarget.Days} дн., {untilTarget.Hours} ч.";
 
-            guna2TextBox1.Text = result;
+            OutputTextBox.Text = result;
         }
     }
 }
