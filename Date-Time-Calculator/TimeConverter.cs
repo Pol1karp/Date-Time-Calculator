@@ -20,10 +20,10 @@ namespace Date_Time_Calculator
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            double inputValue = (double)guna2NumericUpDown2.Value;
+            double inputValue = (double)AmoundOfTime.Value;
 
-            string from = guna2ComboBox2.SelectedItem.ToString();
-            string to = guna2ComboBox1.SelectedItem.ToString();
+            string from = SecondChoice.SelectedItem.ToString();
+            string to = FirstChoice.SelectedItem.ToString();
 
             double seconds = 0;
             if (from == "Лет") seconds = inputValue * 365.25 * 24 * 60 * 60;
@@ -39,7 +39,7 @@ namespace Date_Time_Calculator
             if (to == "Часов") result = seconds / (60 * 60);
             if (to == "Минут") result = seconds / 60;
             if (to == "Секунд") result = seconds;
-            guna2TextBox1.Text = $"{Math.Round(result, 4)} {to}";
+            OutputTextBox.Text = $"{Math.Round(result, 4)} {to}";
         }
     }
 }
