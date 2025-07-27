@@ -27,7 +27,7 @@ namespace Date_Time_Calculator
         private void timer1_Tick(object sender, EventArgs e)
         {
             long unixTimestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
-            guna2HtmlLabel3.Text = $"Unix Timestamp: {unixTimestamp}";
+            UnixTimestampLabel.Text = $"Unix Timestamp: {unixTimestamp}";
         }
         private void guna2Button7_Click(object sender, EventArgs e)
         {
