@@ -54,9 +54,22 @@ namespace Date_Time_Calculator
             {
                 eighteenInfo = "Уже исполнилось 18";
             }
-             
+
             DateTime birthdayN = birthdate.AddYears(targetAge);
             TimeSpan untilTarget = birthdayN - now;
+
+            string result = $"Живёт:\r\n" +
+                    $"- Лет: {years}\r\n" +
+                    $"- Дней: {days}\r\n" +
+                    $"- Часов: {hours}\r\n" +
+                    $"- Минут: {minutes}\r\n" +
+                    $"- Секунд: {seconds}\r\n" +
+                    $"- Миллисекунд: {milliseconds}\r\n\r\n" +
+                    $"До следующего дня рождения: {untilNextBirthday.Days} дн., {untilNextBirthday.Hours} ч.\r\n" +
+                    $"{eighteenInfo}\r\n" +
+                    $"До N  возроста {targetAge} лет: {untilTarget.Days} дн., {untilTarget.Hours} ч.";
+
+            guna2TextBox1.Text = result;
         }
     }
 }
