@@ -19,8 +19,8 @@ namespace Date_Time_Calculator
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            DateTime start = guna2DateTimePicker1.Value;
-            DateTime end = guna2DateTimePicker2.Value;
+            DateTime start = FirstDate.Value;
+            DateTime end = SecondDate.Value;
             if (start > end)
             {
                 DateTime temp = start;
@@ -38,7 +38,7 @@ namespace Date_Time_Calculator
                 }
             }
 
-            guna2TextBox1.Text = "Високосных лет между датами: " + leapYears;
+            OutputTextBox.Text = "Високосных лет между датами: " + leapYears;
         }
     }
 }

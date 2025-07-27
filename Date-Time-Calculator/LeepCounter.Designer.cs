@@ -28,125 +28,125 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.TitelLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.OutputTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.SecondDateLab = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.FirstDateLab = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.StartButton = new Guna.UI2.WinForms.Guna2Button();
+            this.SecondDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.FirstDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.SuspendLayout();
             // 
-            // guna2HtmlLabel1
+            // TitelLabel
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(219, 23);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(96, 22);
-            this.guna2HtmlLabel1.TabIndex = 22;
-            this.guna2HtmlLabel1.Text = "LeepCounter";
+            this.TitelLabel.BackColor = System.Drawing.Color.Transparent;
+            this.TitelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TitelLabel.Location = new System.Drawing.Point(219, 23);
+            this.TitelLabel.Name = "TitelLabel";
+            this.TitelLabel.Size = new System.Drawing.Size(96, 22);
+            this.TitelLabel.TabIndex = 22;
+            this.TitelLabel.Text = "LeepCounter";
             // 
-            // guna2TextBox1
+            // OutputTextBox
             // 
-            this.guna2TextBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(38, 454);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Multiline = true;
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.ReadOnly = true;
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(528, 125);
-            this.guna2TextBox1.TabIndex = 21;
+            this.OutputTextBox.BackColor = System.Drawing.SystemColors.Control;
+            this.OutputTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.OutputTextBox.DefaultText = "";
+            this.OutputTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.OutputTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.OutputTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.OutputTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.OutputTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.OutputTextBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OutputTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.OutputTextBox.Location = new System.Drawing.Point(38, 454);
+            this.OutputTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OutputTextBox.Multiline = true;
+            this.OutputTextBox.Name = "OutputTextBox";
+            this.OutputTextBox.PlaceholderText = "";
+            this.OutputTextBox.ReadOnly = true;
+            this.OutputTextBox.SelectedText = "";
+            this.OutputTextBox.Size = new System.Drawing.Size(528, 125);
+            this.OutputTextBox.TabIndex = 21;
             // 
-            // guna2HtmlLabel3
+            // SecondDateLab
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(366, 100);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(105, 22);
-            this.guna2HtmlLabel3.TabIndex = 20;
-            this.guna2HtmlLabel3.Text = "Вторая дата:";
+            this.SecondDateLab.BackColor = System.Drawing.Color.Transparent;
+            this.SecondDateLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SecondDateLab.Location = new System.Drawing.Point(366, 100);
+            this.SecondDateLab.Name = "SecondDateLab";
+            this.SecondDateLab.Size = new System.Drawing.Size(105, 22);
+            this.SecondDateLab.TabIndex = 20;
+            this.SecondDateLab.Text = "Вторая дата:";
             // 
-            // guna2HtmlLabel2
+            // FirstDateLab
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(38, 100);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(106, 22);
-            this.guna2HtmlLabel2.TabIndex = 19;
-            this.guna2HtmlLabel2.Text = "Первая дата:";
+            this.FirstDateLab.BackColor = System.Drawing.Color.Transparent;
+            this.FirstDateLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FirstDateLab.Location = new System.Drawing.Point(38, 100);
+            this.FirstDateLab.Name = "FirstDateLab";
+            this.FirstDateLab.Size = new System.Drawing.Size(106, 22);
+            this.FirstDateLab.TabIndex = 19;
+            this.FirstDateLab.Text = "Первая дата:";
             // 
-            // guna2Button1
+            // StartButton
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Gray;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(178, 402);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(200, 45);
-            this.guna2Button1.TabIndex = 18;
-            this.guna2Button1.Text = "Измерить";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.StartButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.StartButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.StartButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.StartButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.StartButton.FillColor = System.Drawing.Color.Gray;
+            this.StartButton.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.StartButton.ForeColor = System.Drawing.Color.White;
+            this.StartButton.Location = new System.Drawing.Point(178, 402);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(200, 45);
+            this.StartButton.TabIndex = 18;
+            this.StartButton.Text = "Измерить";
+            this.StartButton.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // guna2DateTimePicker2
+            // SecondDate
             // 
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.SystemColors.ButtonShadow;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
-            this.guna2DateTimePicker2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(366, 128);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(200, 36);
-            this.guna2DateTimePicker2.TabIndex = 17;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2025, 7, 20, 0, 1, 0, 0);
+            this.SecondDate.Checked = true;
+            this.SecondDate.FillColor = System.Drawing.SystemColors.ButtonShadow;
+            this.SecondDate.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
+            this.SecondDate.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.SecondDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.SecondDate.Location = new System.Drawing.Point(366, 128);
+            this.SecondDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.SecondDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.SecondDate.Name = "SecondDate";
+            this.SecondDate.Size = new System.Drawing.Size(200, 36);
+            this.SecondDate.TabIndex = 17;
+            this.SecondDate.Value = new System.DateTime(2025, 7, 20, 0, 1, 0, 0);
             // 
-            // guna2DateTimePicker1
+            // FirstDate
             // 
-            this.guna2DateTimePicker1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.SystemColors.ButtonShadow;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(38, 128);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
-            this.guna2DateTimePicker1.TabIndex = 16;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2025, 7, 20, 0, 1, 0, 0);
+            this.FirstDate.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.FirstDate.Checked = true;
+            this.FirstDate.FillColor = System.Drawing.SystemColors.ButtonShadow;
+            this.FirstDate.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
+            this.FirstDate.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.FirstDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.FirstDate.Location = new System.Drawing.Point(38, 128);
+            this.FirstDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.FirstDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.FirstDate.Name = "FirstDate";
+            this.FirstDate.Size = new System.Drawing.Size(200, 36);
+            this.FirstDate.TabIndex = 16;
+            this.FirstDate.Value = new System.DateTime(2025, 7, 20, 0, 1, 0, 0);
             // 
             // LeepCounter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2DateTimePicker2);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.TitelLabel);
+            this.Controls.Add(this.OutputTextBox);
+            this.Controls.Add(this.SecondDateLab);
+            this.Controls.Add(this.FirstDateLab);
+            this.Controls.Add(this.StartButton);
+            this.Controls.Add(this.SecondDate);
+            this.Controls.Add(this.FirstDate);
             this.Name = "LeepCounter";
             this.Size = new System.Drawing.Size(606, 583);
             this.ResumeLayout(false);
@@ -156,12 +156,12 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel TitelLabel;
+        private Guna.UI2.WinForms.Guna2TextBox OutputTextBox;
+        private Guna.UI2.WinForms.Guna2HtmlLabel SecondDateLab;
+        private Guna.UI2.WinForms.Guna2HtmlLabel FirstDateLab;
+        private Guna.UI2.WinForms.Guna2Button StartButton;
+        private Guna.UI2.WinForms.Guna2DateTimePicker SecondDate;
+        private Guna.UI2.WinForms.Guna2DateTimePicker FirstDate;
     }
 }
