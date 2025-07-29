@@ -22,7 +22,7 @@ namespace Date_Time_Calculator
         {
             guna2Panel3.Controls.Clear();
             uc.Dock = DockStyle.Fill;           
-            guna2Panel3.Controls.Add(uc);         
+            guna2Panel3.Controls.Add(uc);      
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
