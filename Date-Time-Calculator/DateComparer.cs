@@ -28,36 +28,39 @@ namespace Date_Time_Calculator
                 MessageBox.Show("Конечная дата должна быть позже начальной.");
                 return;
             }
-            if (start > end)
-            {
-                DateTime temp = start;
-                start = end;
-                end = temp;
-            }
-
-            TimeSpan diff = end - start;
-
-            int totalDays = (int)diff.TotalDays;
-            int totalHours = (int)diff.TotalHours;
-            int totalMinutes = (int)diff.TotalMinutes;
-            int totalSeconds = (int)diff.TotalSeconds;
-            int totalMilliseconds = (int)diff.TotalMilliseconds;
-
             int years = end.Year - start.Year;
-            int months = (end.Year - start.Year) * 12 + end.Month - start.Month;
-            int weeks = totalDays / 7;
+            int months = end.Month - start.Month;
+            int days = end.Day - start.Day;
+            if (days < 0)
+            {
+                months--;
+                days += DateTime.DaysInMonth(start.Year, start.Month);
+            }
+            if (months < 0)
+            {
+                years--;
+                months += 12;
+            }
+            int weeks = days / 7;
+            days = days % 7;
+            TimeSpan timeDiff = end - start;
+            int hours = timeDiff.Hours;
+            int minutes = timeDiff.Minutes;
+            int seconds = timeDiff.Seconds;
+            int milliseconds = timeDiff.Milliseconds;
 
-            string result = $"Прошло:\n" +
-                            $"- Лет: {years}\n" +
-                            $"- Месяцев: {months}\n" +
-                            $"- Недель: {weeks}\n" +
-                            $"- Дней: {totalDays}\n" +
-                            $"- Часов: {totalHours}\n" +
-                            $"- Минут: {totalMinutes}\n" +
-                            $"- Секунд: {totalSeconds}\n" +
-                            $"- Миллисекунд: {totalMilliseconds}";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Прошло:");
+            sb.AppendLine($"- Лет: {years}");
+            sb.AppendLine($"- Месяцев: {months}");
+            sb.AppendLine($"- Недель: {weeks}");
+            sb.AppendLine($"- Дней: {days}");
+            sb.AppendLine($"- Часов: {hours}");
+            sb.AppendLine($"- Минут: {minutes}");
+            sb.AppendLine($"- Секунд: {seconds}");
+            sb.AppendLine($"- Миллисекунд: {milliseconds}");
 
-            OutputTextBox.Text = result;
+            OutputTextBox.Text = sb.ToString();
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)

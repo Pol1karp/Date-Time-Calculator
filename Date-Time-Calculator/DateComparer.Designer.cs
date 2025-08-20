@@ -49,14 +49,14 @@
             this.OutputTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.OutputTextBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.OutputTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.OutputTextBox.Location = new System.Drawing.Point(42, 430);
+            this.OutputTextBox.Location = new System.Drawing.Point(42, 338);
             this.OutputTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OutputTextBox.Multiline = true;
             this.OutputTextBox.Name = "OutputTextBox";
             this.OutputTextBox.PlaceholderText = "";
             this.OutputTextBox.ReadOnly = true;
             this.OutputTextBox.SelectedText = "";
-            this.OutputTextBox.Size = new System.Drawing.Size(528, 125);
+            this.OutputTextBox.Size = new System.Drawing.Size(528, 217);
             this.OutputTextBox.TabIndex = 14;
             // 
             // SecondDateLab
@@ -88,7 +88,7 @@
             this.StartButton.FillColor = System.Drawing.Color.Gray;
             this.StartButton.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.StartButton.ForeColor = System.Drawing.Color.White;
-            this.StartButton.Location = new System.Drawing.Point(182, 378);
+            this.StartButton.Location = new System.Drawing.Point(202, 286);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(200, 45);
             this.StartButton.TabIndex = 11;

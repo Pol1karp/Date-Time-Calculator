@@ -76,6 +76,7 @@
             this.OutputTextBox.SelectedText = "";
             this.OutputTextBox.Size = new System.Drawing.Size(528, 125);
             this.OutputTextBox.TabIndex = 21;
+            this.OutputTextBox.TextChanged += new System.EventHandler(this.OutputTextBox_TextChanged);
             // 
             // SecondDateLabel
             // 

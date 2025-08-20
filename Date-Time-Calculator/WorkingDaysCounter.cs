@@ -52,7 +52,10 @@ namespace Date_Time_Calculator
             OutputTextBox.Text = $"Рабочих дней: {workDays}";
         }
 
+        private void OutputTextBox_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }
 
