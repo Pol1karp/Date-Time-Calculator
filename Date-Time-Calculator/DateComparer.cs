@@ -48,21 +48,14 @@ namespace Date_Time_Calculator
             int minutes = timeDiff.Minutes;
             int seconds = timeDiff.Seconds;
             int milliseconds = timeDiff.Milliseconds;
-
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Прошло:");
             sb.AppendLine($"- Лет: {years}");
             sb.AppendLine($"- Месяцев: {months}");
             sb.AppendLine($"- Недель: {weeks}");
             sb.AppendLine($"- Дней: {days}");
-            sb.AppendLine($"- Часов: {hours}");
-            sb.AppendLine($"- Минут: {minutes}");
-            sb.AppendLine($"- Секунд: {seconds}");
-            sb.AppendLine($"- Миллисекунд: {milliseconds}");
-
             OutputTextBox.Text = sb.ToString();
         }
-
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
 
