@@ -51,9 +51,9 @@
             this.TitelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TitelLabel.Location = new System.Drawing.Point(219, 23);
             this.TitelLabel.Name = "TitelLabel";
-            this.TitelLabel.Size = new System.Drawing.Size(154, 22);
+            this.TitelLabel.Size = new System.Drawing.Size(170, 22);
             this.TitelLabel.TabIndex = 22;
-            this.TitelLabel.Text = "WorkingDaysCounter";
+            this.TitelLabel.Text = "2Date Working Counter";
             // 
             // OutputTextBox
             // 
@@ -116,6 +116,7 @@
             // 
             // SecondDate
             // 
+            this.SecondDate.Animated = true;
             this.SecondDate.Checked = true;
             this.SecondDate.FillColor = System.Drawing.SystemColors.ButtonShadow;
             this.SecondDate.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
@@ -131,6 +132,7 @@
             // 
             // FirstDate
             // 
+            this.FirstDate.Animated = true;
             this.FirstDate.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.FirstDate.Checked = true;
             this.FirstDate.FillColor = System.Drawing.SystemColors.ButtonShadow;
@@ -149,7 +151,7 @@
             // 
             this.DayChoLabel.BackColor = System.Drawing.Color.Transparent;
             this.DayChoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DayChoLabel.Location = new System.Drawing.Point(216, 172);
+            this.DayChoLabel.Location = new System.Drawing.Point(216, 203);
             this.DayChoLabel.Name = "DayChoLabel";
             this.DayChoLabel.Size = new System.Drawing.Size(163, 22);
             this.DayChoLabel.TabIndex = 23;
@@ -162,8 +164,8 @@
             this.IfMonday.CheckedState.BorderRadius = 0;
             this.IfMonday.CheckedState.BorderThickness = 0;
             this.IfMonday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.IfMonday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.IfMonday.Location = new System.Drawing.Point(107, 200);
+            this.IfMonday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.IfMonday.Location = new System.Drawing.Point(107, 231);
             this.IfMonday.Name = "IfMonday";
             this.IfMonday.Size = new System.Drawing.Size(132, 24);
             this.IfMonday.TabIndex = 24;
@@ -181,7 +183,7 @@
             this.IfTuesday.CheckedState.BorderThickness = 0;
             this.IfTuesday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.IfTuesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.IfTuesday.Location = new System.Drawing.Point(147, 230);
+            this.IfTuesday.Location = new System.Drawing.Point(107, 261);
             this.IfTuesday.Name = "IfTuesday";
             this.IfTuesday.Size = new System.Drawing.Size(92, 24);
             this.IfTuesday.TabIndex = 25;
@@ -199,7 +201,7 @@
             this.IfWensday.CheckedState.BorderThickness = 0;
             this.IfWensday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.IfWensday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.IfWensday.Location = new System.Drawing.Point(162, 260);
+            this.IfWensday.Location = new System.Drawing.Point(107, 291);
             this.IfWensday.Name = "IfWensday";
             this.IfWensday.Size = new System.Drawing.Size(77, 24);
             this.IfWensday.TabIndex = 26;
@@ -217,7 +219,7 @@
             this.IfThursday.CheckedState.BorderThickness = 0;
             this.IfThursday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.IfThursday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.IfThursday.Location = new System.Drawing.Point(367, 200);
+            this.IfThursday.Location = new System.Drawing.Point(245, 231);
             this.IfThursday.Name = "IfThursday";
             this.IfThursday.Size = new System.Drawing.Size(92, 24);
             this.IfThursday.TabIndex = 27;
@@ -235,7 +237,7 @@
             this.IfFriday.CheckedState.BorderThickness = 0;
             this.IfFriday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.IfFriday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.IfFriday.Location = new System.Drawing.Point(367, 230);
+            this.IfFriday.Location = new System.Drawing.Point(243, 261);
             this.IfFriday.Name = "IfFriday";
             this.IfFriday.Size = new System.Drawing.Size(94, 24);
             this.IfFriday.TabIndex = 28;
@@ -253,7 +255,7 @@
             this.IfSutarday.CheckedState.BorderThickness = 0;
             this.IfSutarday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.IfSutarday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.IfSutarday.Location = new System.Drawing.Point(367, 260);
+            this.IfSutarday.Location = new System.Drawing.Point(243, 291);
             this.IfSutarday.Name = "IfSutarday";
             this.IfSutarday.Size = new System.Drawing.Size(91, 24);
             this.IfSutarday.TabIndex = 29;
@@ -271,7 +273,7 @@
             this.IfSunday.CheckedState.BorderThickness = 0;
             this.IfSunday.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.IfSunday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.IfSunday.Location = new System.Drawing.Point(237, 290);
+            this.IfSunday.Location = new System.Drawing.Point(343, 231);
             this.IfSunday.Name = "IfSunday";
             this.IfSunday.Size = new System.Drawing.Size(126, 24);
             this.IfSunday.TabIndex = 30;

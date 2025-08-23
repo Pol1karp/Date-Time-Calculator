@@ -43,9 +43,9 @@
             this.TitelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TitelLabel.Location = new System.Drawing.Point(219, 23);
             this.TitelLabel.Name = "TitelLabel";
-            this.TitelLabel.Size = new System.Drawing.Size(96, 22);
+            this.TitelLabel.Size = new System.Drawing.Size(100, 22);
             this.TitelLabel.TabIndex = 22;
-            this.TitelLabel.Text = "LeepCounter";
+            this.TitelLabel.Text = "Leep Counter";
             // 
             // OutputTextBox
             // 
@@ -107,6 +107,7 @@
             // 
             // SecondDate
             // 
+            this.SecondDate.Animated = true;
             this.SecondDate.Checked = true;
             this.SecondDate.FillColor = System.Drawing.SystemColors.ButtonShadow;
             this.SecondDate.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
@@ -122,6 +123,7 @@
             // 
             // FirstDate
             // 
+            this.FirstDate.Animated = true;
             this.FirstDate.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.FirstDate.Checked = true;
             this.FirstDate.FillColor = System.Drawing.SystemColors.ButtonShadow;

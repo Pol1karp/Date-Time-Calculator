@@ -46,9 +46,9 @@
             this.TitelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TitelLabel.Location = new System.Drawing.Point(219, 23);
             this.TitelLabel.Name = "TitelLabel";
-            this.TitelLabel.Size = new System.Drawing.Size(121, 22);
+            this.TitelLabel.Size = new System.Drawing.Size(125, 22);
             this.TitelLabel.TabIndex = 29;
-            this.TitelLabel.Text = "BirthdayInformer";
+            this.TitelLabel.Text = "Birthday Informer";
             // 
             // OutputTextBox
             // 
@@ -100,6 +100,7 @@
             // 
             // InputBirthDate
             // 
+            this.InputBirthDate.Animated = true;
             this.InputBirthDate.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.InputBirthDate.Checked = true;
             this.InputBirthDate.FillColor = System.Drawing.SystemColors.ButtonShadow;
@@ -112,7 +113,7 @@
             this.InputBirthDate.Name = "InputBirthDate";
             this.InputBirthDate.Size = new System.Drawing.Size(200, 36);
             this.InputBirthDate.TabIndex = 23;
-            this.InputBirthDate.Value = new System.DateTime(2025, 7, 20, 0, 1, 0, 0);
+            this.InputBirthDate.Value = new System.DateTime(2025, 7, 20, 12, 0, 0, 0);
             // 
             // AgeLabel
             // 

@@ -55,12 +55,13 @@
             "Лет",
             "Месяцев",
             "Дней",
+            "Часов",
             "Минут",
             "Секунд"});
             this.FirstChoice.Location = new System.Drawing.Point(39, 130);
             this.FirstChoice.Name = "FirstChoice";
             this.FirstChoice.Size = new System.Drawing.Size(230, 36);
-            this.FirstChoice.StartIndex = 3;
+            this.FirstChoice.StartIndex = 0;
             this.FirstChoice.TabIndex = 0;
             // 
             // SecondChoice
@@ -78,6 +79,7 @@
             "Лет",
             "Месяцев",
             "Дней",
+            "Часов",
             "Минут",
             "Секунд"});
             this.SecondChoice.Location = new System.Drawing.Point(367, 130);
@@ -110,7 +112,7 @@
             // 
             this.AmoundOfTime.BackColor = System.Drawing.Color.Transparent;
             this.AmoundOfTime.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AmoundOfTime.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AmoundOfTime.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.AmoundOfTime.Location = new System.Drawing.Point(179, 249);
             this.AmoundOfTime.Minimum = new decimal(new int[] {
             1,
@@ -180,9 +182,9 @@
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(219, 23);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(71, 22);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(106, 22);
             this.guna2HtmlLabel4.TabIndex = 27;
-            this.guna2HtmlLabel4.Text = "TitelLabel";
+            this.guna2HtmlLabel4.Text = "TimeConverter";
             // 
             // TimeConverter
             // 

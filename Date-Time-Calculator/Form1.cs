@@ -30,8 +30,11 @@ namespace Date_Time_Calculator
             UnixTimestampLabel.Text = $"Unix Timestamp: {unixTimestamp}";
         }
         private void guna2Button7_Click(object sender, EventArgs e)
-        {
+        {   
             guna2Panel3.Controls.Clear();
+            guna2Panel3.Controls.Add(guna2TextBox1);
+            guna2Panel3.Controls.Add(guna2TextBox2);
+            guna2Panel3.Controls.Add(guna2TextBox3);
         }
         private void guna2Button2_Click(object sender, EventArgs e)
         {

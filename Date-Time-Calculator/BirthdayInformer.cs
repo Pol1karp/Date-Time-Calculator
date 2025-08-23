@@ -16,6 +16,7 @@ namespace Date_Time_Calculator
         public BirthdayInformer()
         {
             InitializeComponent();
+            timer1.Enabled = false;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

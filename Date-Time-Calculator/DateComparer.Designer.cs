@@ -49,15 +49,16 @@
             this.OutputTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.OutputTextBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.OutputTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.OutputTextBox.Location = new System.Drawing.Point(42, 394);
+            this.OutputTextBox.Location = new System.Drawing.Point(42, 344);
             this.OutputTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OutputTextBox.Multiline = true;
             this.OutputTextBox.Name = "OutputTextBox";
             this.OutputTextBox.PlaceholderText = "";
             this.OutputTextBox.ReadOnly = true;
             this.OutputTextBox.SelectedText = "";
-            this.OutputTextBox.Size = new System.Drawing.Size(528, 161);
+            this.OutputTextBox.Size = new System.Drawing.Size(528, 211);
             this.OutputTextBox.TabIndex = 14;
+            this.OutputTextBox.TextChanged += new System.EventHandler(this.OutputTextBox_TextChanged);
             // 
             // SecondDateLab
             // 
@@ -88,7 +89,7 @@
             this.StartButton.FillColor = System.Drawing.Color.Gray;
             this.StartButton.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.StartButton.ForeColor = System.Drawing.Color.White;
-            this.StartButton.Location = new System.Drawing.Point(189, 342);
+            this.StartButton.Location = new System.Drawing.Point(204, 292);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(200, 45);
             this.StartButton.TabIndex = 11;
@@ -97,6 +98,7 @@
             // 
             // SecondDate
             // 
+            this.SecondDate.Animated = true;
             this.SecondDate.Checked = true;
             this.SecondDate.FillColor = System.Drawing.SystemColors.ButtonShadow;
             this.SecondDate.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
@@ -108,10 +110,11 @@
             this.SecondDate.Name = "SecondDate";
             this.SecondDate.Size = new System.Drawing.Size(200, 36);
             this.SecondDate.TabIndex = 10;
-            this.SecondDate.Value = new System.DateTime(2025, 7, 20, 0, 1, 0, 0);
+            this.SecondDate.Value = new System.DateTime(2025, 8, 23, 0, 0, 0, 0);
             // 
             // FirstDate
             // 
+            this.FirstDate.Animated = true;
             this.FirstDate.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.FirstDate.Checked = true;
             this.FirstDate.FillColor = System.Drawing.SystemColors.ButtonShadow;
@@ -124,7 +127,7 @@
             this.FirstDate.Name = "FirstDate";
             this.FirstDate.Size = new System.Drawing.Size(200, 36);
             this.FirstDate.TabIndex = 9;
-            this.FirstDate.Value = new System.DateTime(2025, 7, 20, 0, 1, 0, 0);
+            this.FirstDate.Value = new System.DateTime(2025, 8, 23, 0, 0, 0, 0);
             // 
             // TitelLabel
             // 
