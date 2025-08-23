@@ -103,7 +103,7 @@
             this.SecondDate.FillColor = System.Drawing.SystemColors.ButtonShadow;
             this.SecondDate.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
             this.SecondDate.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.SecondDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.SecondDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.SecondDate.Location = new System.Drawing.Point(370, 125);
             this.SecondDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.SecondDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -120,7 +120,7 @@
             this.FirstDate.FillColor = System.Drawing.SystemColors.ButtonShadow;
             this.FirstDate.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
             this.FirstDate.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.FirstDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.FirstDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.FirstDate.Location = new System.Drawing.Point(42, 125);
             this.FirstDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.FirstDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -128,6 +128,7 @@
             this.FirstDate.Size = new System.Drawing.Size(200, 36);
             this.FirstDate.TabIndex = 9;
             this.FirstDate.Value = new System.DateTime(2025, 8, 23, 0, 0, 0, 0);
+            this.FirstDate.ValueChanged += new System.EventHandler(this.FirstDate_ValueChanged);
             // 
             // TitelLabel
             // 

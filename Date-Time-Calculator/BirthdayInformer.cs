@@ -17,6 +17,8 @@ namespace Date_Time_Calculator
         {
             InitializeComponent();
             timer1.Enabled = false;
+            InputBirthDate.CustomFormat = "dd.MM.yyyy HH:mm:ss";
+            InputBirthDate.ShowUpDown = true;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -64,15 +66,42 @@ namespace Date_Time_Calculator
             DateTime thirtyThree = birthDate.AddYears(33);
             TimeSpan until33 = thirtyThree - now;
 
+            string info18;
+            if (until18.TotalSeconds < 0)
+            {
+                TimeSpan since18 = now - eighteenth;
+                info18 = $"Уже исполнилось: {since18.Days} дн., {since18.Hours} ч. назад";
+            }
+            else
+            {
+                info18 = $"{until18.Days} дн., {until18.Hours} ч.";
+            }
+            string info33;
+            if (until33.TotalSeconds < 0)
+            {
+                TimeSpan since33 = now - thirtyThree;
+                info33 = $"Уже исполнилось: {since33.Days} дн., {since33.Hours} ч. назад";
+            }
+            else
+            {
+                info33 = $"{until33.Days} дн., {until33.Hours} ч.";
+            }
+
+
             OutputTextBox.Text =
                 $"Живёт:\r\n" +
                 $"- Лет: {years}\r\n" +
                 $"- Месяцев: {months}\r\n" +
                 $"- Недель: {weeks}\r\n" +
-                $"- Дней: {days}\r\n\r\n" +
+                $"- Дней: {days}\r\n" +
+                $"- Часов: {now.Hour - birthDate.Hour}\r\n" +
+                $"- Минут: {now.Minute - birthDate.Minute}\r\n" +
+                $"- Секунд: {now.Second - birthDate.Second}\r\n\r\n" +
                 $"До следующего дня рождения: {untilNextBirthday.Days} дн., {untilNextBirthday.Hours} ч.\r\n" +
-                $"До 18 лет: {until18.Days} дн., {until18.Hours} ч.\r\n" +
-                $"До 33-летия: {until33.Days} дн., {until33.Hours} ч.";
+                $"До 18 лет: {info18}\r\n" +
+                $"До 33-летия: {info33}";
         }
+
+     
     }
 }

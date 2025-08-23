@@ -106,7 +106,7 @@
             this.InputBirthDate.FillColor = System.Drawing.SystemColors.ButtonShadow;
             this.InputBirthDate.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
             this.InputBirthDate.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.InputBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.InputBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.InputBirthDate.Location = new System.Drawing.Point(39, 130);
             this.InputBirthDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.InputBirthDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);

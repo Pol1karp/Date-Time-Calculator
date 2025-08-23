@@ -16,6 +16,10 @@ namespace Date_Time_Calculator
         public DateComparer()
         {
             InitializeComponent();
+            FirstDate.CustomFormat = "dd.MM.yyyy HH:mm:ss";
+            FirstDate.ShowUpDown = true;
+            SecondDate.CustomFormat = "dd.MM.yyyy HH:mm:ss";
+            SecondDate.ShowUpDown = true;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -66,6 +70,11 @@ namespace Date_Time_Calculator
         }
 
         private void OutputTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FirstDate_ValueChanged(object sender, EventArgs e)
         {
 
         }
