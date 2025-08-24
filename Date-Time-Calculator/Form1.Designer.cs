@@ -42,11 +42,11 @@
             this.MenuLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DComparerButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -121,6 +121,7 @@
             // 
             // BirthdayInfoButton
             // 
+            this.BirthdayInfoButton.Animated = true;
             this.BirthdayInfoButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BirthdayInfoButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BirthdayInfoButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -130,6 +131,7 @@
             this.BirthdayInfoButton.ForeColor = System.Drawing.SystemColors.MenuText;
             this.BirthdayInfoButton.Location = new System.Drawing.Point(3, 262);
             this.BirthdayInfoButton.Name = "BirthdayInfoButton";
+            this.BirthdayInfoButton.PressedColor = System.Drawing.Color.Aqua;
             this.BirthdayInfoButton.Size = new System.Drawing.Size(222, 51);
             this.BirthdayInfoButton.TabIndex = 13;
             this.BirthdayInfoButton.Text = "Birthday Informer";
@@ -138,6 +140,7 @@
             // 
             // TConverterButton
             // 
+            this.TConverterButton.Animated = true;
             this.TConverterButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.TConverterButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.TConverterButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -147,6 +150,7 @@
             this.TConverterButton.ForeColor = System.Drawing.SystemColors.MenuText;
             this.TConverterButton.Location = new System.Drawing.Point(3, 205);
             this.TConverterButton.Name = "TConverterButton";
+            this.TConverterButton.PressedColor = System.Drawing.Color.Aqua;
             this.TConverterButton.Size = new System.Drawing.Size(222, 51);
             this.TConverterButton.TabIndex = 12;
             this.TConverterButton.Text = "Time Converter";
@@ -155,6 +159,7 @@
             // 
             // LeepButton
             // 
+            this.LeepButton.Animated = true;
             this.LeepButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.LeepButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.LeepButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -164,6 +169,7 @@
             this.LeepButton.ForeColor = System.Drawing.SystemColors.MenuText;
             this.LeepButton.Location = new System.Drawing.Point(3, 148);
             this.LeepButton.Name = "LeepButton";
+            this.LeepButton.PressedColor = System.Drawing.Color.Aqua;
             this.LeepButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.LeepButton.Size = new System.Drawing.Size(222, 51);
             this.LeepButton.TabIndex = 11;
@@ -173,6 +179,7 @@
             // 
             // WCounterButton
             // 
+            this.WCounterButton.Animated = true;
             this.WCounterButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.WCounterButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.WCounterButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -182,6 +189,7 @@
             this.WCounterButton.ForeColor = System.Drawing.SystemColors.MenuText;
             this.WCounterButton.Location = new System.Drawing.Point(3, 91);
             this.WCounterButton.Name = "WCounterButton";
+            this.WCounterButton.PressedColor = System.Drawing.Color.Aqua;
             this.WCounterButton.Size = new System.Drawing.Size(222, 51);
             this.WCounterButton.TabIndex = 10;
             this.WCounterButton.Text = "2Date Working Counter";
@@ -201,6 +209,7 @@
             // 
             // DComparerButton
             // 
+            this.DComparerButton.Animated = true;
             this.DComparerButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.DComparerButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.DComparerButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -210,6 +219,7 @@
             this.DComparerButton.ForeColor = System.Drawing.SystemColors.MenuText;
             this.DComparerButton.Location = new System.Drawing.Point(3, 34);
             this.DComparerButton.Name = "DComparerButton";
+            this.DComparerButton.PressedColor = System.Drawing.Color.Aqua;
             this.DComparerButton.Size = new System.Drawing.Size(222, 51);
             this.DComparerButton.TabIndex = 9;
             this.DComparerButton.Text = "2Date Соmparer";
@@ -227,6 +237,50 @@
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(606, 583);
             this.guna2Panel3.TabIndex = 8;
+            // 
+            // guna2TextBox2
+            // 
+            this.guna2TextBox2.Animated = true;
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.guna2TextBox2.DefaultText = "<=Используйте панель слева для навигации.";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Location = new System.Drawing.Point(7, 504);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox2.Multiline = true;
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.Size = new System.Drawing.Size(363, 48);
+            this.guna2TextBox2.TabIndex = 4;
+            this.guna2TextBox2.UseWaitCursor = true;
+            // 
+            // guna2TextBox3
+            // 
+            this.guna2TextBox3.Animated = true;
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.guna2TextBox3.DefaultText = "Главная страница программы, это краткий гайд и путеводитель по программе.";
+            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Location = new System.Drawing.Point(58, 7);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox3.Multiline = true;
+            this.guna2TextBox3.Name = "guna2TextBox3";
+            this.guna2TextBox3.PlaceholderText = "";
+            this.guna2TextBox3.SelectedText = "";
+            this.guna2TextBox3.Size = new System.Drawing.Size(510, 48);
+            this.guna2TextBox3.TabIndex = 3;
+            this.guna2TextBox3.UseWaitCursor = true;
             // 
             // guna2TextBox1
             // 
@@ -266,50 +320,6 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // guna2TextBox3
-            // 
-            this.guna2TextBox3.Animated = true;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.guna2TextBox3.DefaultText = "Главная страница программы, это краткий гайд и путеводитель по программе.";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(58, 7);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox3.Multiline = true;
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(510, 48);
-            this.guna2TextBox3.TabIndex = 3;
-            this.guna2TextBox3.UseWaitCursor = true;
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.Animated = true;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.guna2TextBox2.DefaultText = "<=Используйте панель слева для навигации.";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(7, 504);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox2.Multiline = true;
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(331, 48);
-            this.guna2TextBox2.TabIndex = 4;
-            this.guna2TextBox2.UseWaitCursor = true;
             // 
             // Form1
             // 

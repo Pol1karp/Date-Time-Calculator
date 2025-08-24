@@ -70,7 +70,7 @@ namespace Date_Time_Calculator
             if (until18.TotalSeconds < 0)
             {
                 TimeSpan since18 = now - eighteenth;
-                info18 = $"Уже исполнилось: {since18.Days} дн., {since18.Hours} ч. назад";
+                info18 = $"Уже исполнилось: {since18.Days} дн., {since18.Hours} ч. назад ";
             }
             else
             {
@@ -96,8 +96,8 @@ namespace Date_Time_Calculator
                 $"- Дней: {days}\r\n" +
                 $"- Часов: {now.Hour - birthDate.Hour}\r\n" +
                 $"- Минут: {now.Minute - birthDate.Minute}\r\n" +
-                $"- Секунд: {now.Second - birthDate.Second}\r\n\r\n" +
-                $"До следующего дня рождения: {untilNextBirthday.Days} дн., {untilNextBirthday.Hours} ч.\r\n" +
+                $"- Секунд: {now.Second - birthDate.Second}\r\n" +
+                $"До следующего дня рождения: {untilNextBirthday.Days} дн., {untilNextBirthday.Hours} ч. {untilNextBirthday.Minutes} м. {untilNextBirthday.Seconds} c.\r\n" +
                 $"До 18 лет: {info18}\r\n" +
                 $"До 33-летия: {info33}";
         }
