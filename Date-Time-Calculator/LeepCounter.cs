@@ -15,6 +15,8 @@ namespace Date_Time_Calculator
         public LeepCounter()
         {
             InitializeComponent();
+            FirstDate.Value = DateTime.Now;
+            SecondDate.Value = DateTime.Now;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

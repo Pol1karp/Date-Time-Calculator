@@ -71,6 +71,7 @@
             this.OutputTextBox.SelectedText = "";
             this.OutputTextBox.Size = new System.Drawing.Size(528, 270);
             this.OutputTextBox.TabIndex = 28;
+            this.OutputTextBox.TextChanged += new System.EventHandler(this.OutputTextBox_TextChanged);
             // 
             // BDateLabel
             // 

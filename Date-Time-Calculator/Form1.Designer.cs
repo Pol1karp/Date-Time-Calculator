@@ -241,7 +241,7 @@
             // guna2TextBox2
             // 
             this.guna2TextBox2.Animated = true;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.Default;
             this.guna2TextBox2.DefaultText = "<=Используйте панель слева для навигации.";
             this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -255,15 +255,15 @@
             this.guna2TextBox2.Multiline = true;
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.ReadOnly = true;
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(363, 48);
             this.guna2TextBox2.TabIndex = 4;
-            this.guna2TextBox2.UseWaitCursor = true;
             // 
             // guna2TextBox3
             // 
             this.guna2TextBox3.Animated = true;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.guna2TextBox3.DefaultText = "Главная страница программы, это краткий гайд и путеводитель по программе.";
             this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -277,15 +277,15 @@
             this.guna2TextBox3.Multiline = true;
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PlaceholderText = "";
+            this.guna2TextBox3.ReadOnly = true;
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.Size = new System.Drawing.Size(510, 48);
             this.guna2TextBox3.TabIndex = 3;
-            this.guna2TextBox3.UseWaitCursor = true;
             // 
             // guna2TextBox1
             // 
             this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.guna2TextBox1.DefaultText = resources.GetString("guna2TextBox1.DefaultText");
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -299,10 +299,10 @@
             this.guna2TextBox1.Multiline = true;
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.ReadOnly = true;
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(510, 253);
             this.guna2TextBox1.TabIndex = 1;
-            this.guna2TextBox1.UseWaitCursor = true;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // guna2HtmlLabel1

@@ -17,6 +17,7 @@ namespace Date_Time_Calculator
         {
             InitializeComponent();
             timer1.Enabled = false;
+            InputBirthDate.Value = DateTime.Now;
             InputBirthDate.CustomFormat = "dd.MM.yyyy HH:mm:ss";
             InputBirthDate.ShowUpDown = true;
         }
@@ -70,23 +71,23 @@ namespace Date_Time_Calculator
             if (until18.TotalSeconds < 0)
             {
                 TimeSpan since18 = now - eighteenth;
-                info18 = $"Уже исполнилось: {since18.Days} дн., {since18.Hours} ч. назад ";
+                info18 = $"Уже исполнилось: {since18.Days} дн., {since18.Hours} ч., {since18.Minutes} м., {since18.Seconds} с. назад";
             }
             else
             {
-                info18 = $"{until18.Days} дн., {until18.Hours} ч.";
+                info18 = $"{until18.Days} дн., {until18.Hours} ч., {until18.Minutes} м., {until18.Seconds} с.";
             }
+
             string info33;
             if (until33.TotalSeconds < 0)
             {
                 TimeSpan since33 = now - thirtyThree;
-                info33 = $"Уже исполнилось: {since33.Days} дн., {since33.Hours} ч. назад";
+                info33 = $"Уже исполнилось: {since33.Days} дн., {since33.Hours} ч., {since33.Minutes} м., {since33.Seconds} с. назад";
             }
             else
             {
-                info33 = $"{until33.Days} дн., {until33.Hours} ч.";
+                info33 = $"{until33.Days} дн., {until33.Hours} ч., {until33.Minutes} м., {until33.Seconds} с.";
             }
-
 
             OutputTextBox.Text =
                 $"Живёт:\r\n" +
@@ -97,11 +98,15 @@ namespace Date_Time_Calculator
                 $"- Часов: {now.Hour - birthDate.Hour}\r\n" +
                 $"- Минут: {now.Minute - birthDate.Minute}\r\n" +
                 $"- Секунд: {now.Second - birthDate.Second}\r\n" +
-                $"До следующего дня рождения: {untilNextBirthday.Days} дн., {untilNextBirthday.Hours} ч. {untilNextBirthday.Minutes} м. {untilNextBirthday.Seconds} c.\r\n" +
+                $"До следующего дня рождения: {untilNextBirthday.Days} дн., {untilNextBirthday.Hours} ч., {untilNextBirthday.Minutes} м., {untilNextBirthday.Seconds} с.\r\n" +
                 $"До 18 лет: {info18}\r\n" +
                 $"До 33-летия: {info33}";
         }
 
-     
+
+        private void OutputTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -16,8 +16,10 @@ namespace Date_Time_Calculator
         public DateComparer()
         {
             InitializeComponent();
+            FirstDate.Value = DateTime.Now;
             FirstDate.CustomFormat = "dd.MM.yyyy HH:mm:ss";
             FirstDate.ShowUpDown = true;
+            SecondDate.Value = DateTime.Now;
             SecondDate.CustomFormat = "dd.MM.yyyy HH:mm:ss";
             SecondDate.ShowUpDown = true;
         }
@@ -32,26 +34,43 @@ namespace Date_Time_Calculator
                 MessageBox.Show("Конечная дата должна быть позже начальной.");
                 return;
             }
+
             int years = end.Year - start.Year;
             int months = end.Month - start.Month;
             int days = end.Day - start.Day;
+
             if (days < 0)
             {
                 months--;
-                days += DateTime.DaysInMonth(start.Year, start.Month);
+
+                int prevMonth = end.Month - 1;
+                int year = end.Year;
+                if (prevMonth == 0)
+                {
+                    prevMonth = 12;
+                    year--;
+                }
+
+                days += DateTime.DaysInMonth(year, prevMonth);
             }
+
             if (months < 0)
             {
                 years--;
                 months += 12;
             }
+
             int weeks = days / 7;
             days = days % 7;
+
             TimeSpan timeDiff = end - start;
             int hours = timeDiff.Hours;
             int minutes = timeDiff.Minutes;
             int seconds = timeDiff.Seconds;
             int milliseconds = timeDiff.Milliseconds;
+
+            int totalDays = (int)timeDiff.TotalDays;
+
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Прошло:");
             sb.AppendLine($"- Лет: {years}");
@@ -62,19 +81,14 @@ namespace Date_Time_Calculator
             sb.AppendLine($"- Минут: {minutes}");
             sb.AppendLine($"- Секунд: {seconds}");
             sb.AppendLine($"- Миллисекунд: {milliseconds}");
+            sb.AppendLine($"- Всего дней: {totalDays}");
+
             OutputTextBox.Text = sb.ToString();
         }
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void OutputTextBox_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void FirstDate_ValueChanged(object sender, EventArgs e)
+        private void SecondDate_ValueChanged(object sender, EventArgs e)
         {
 
         }

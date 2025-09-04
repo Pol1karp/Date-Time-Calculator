@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace Date_Time_Calculator
         public WorkingDaysCounter()
         {
             InitializeComponent();
+            FirstDate.Value=DateTime.Now;
+            SecondDate.Value=DateTime.Now;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

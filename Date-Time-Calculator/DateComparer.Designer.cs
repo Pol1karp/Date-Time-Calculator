@@ -49,16 +49,15 @@
             this.OutputTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.OutputTextBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.OutputTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.OutputTextBox.Location = new System.Drawing.Point(42, 344);
+            this.OutputTextBox.Location = new System.Drawing.Point(42, 317);
             this.OutputTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OutputTextBox.Multiline = true;
             this.OutputTextBox.Name = "OutputTextBox";
             this.OutputTextBox.PlaceholderText = "";
             this.OutputTextBox.ReadOnly = true;
             this.OutputTextBox.SelectedText = "";
-            this.OutputTextBox.Size = new System.Drawing.Size(528, 211);
+            this.OutputTextBox.Size = new System.Drawing.Size(528, 238);
             this.OutputTextBox.TabIndex = 14;
-            this.OutputTextBox.TextChanged += new System.EventHandler(this.OutputTextBox_TextChanged);
             // 
             // SecondDateLab
             // 
@@ -89,7 +88,7 @@
             this.StartButton.FillColor = System.Drawing.Color.Gray;
             this.StartButton.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.StartButton.ForeColor = System.Drawing.Color.White;
-            this.StartButton.Location = new System.Drawing.Point(204, 292);
+            this.StartButton.Location = new System.Drawing.Point(207, 265);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(200, 45);
             this.StartButton.TabIndex = 11;
@@ -111,6 +110,7 @@
             this.SecondDate.Size = new System.Drawing.Size(200, 36);
             this.SecondDate.TabIndex = 10;
             this.SecondDate.Value = new System.DateTime(2025, 8, 23, 0, 0, 0, 0);
+            this.SecondDate.ValueChanged += new System.EventHandler(this.SecondDate_ValueChanged);
             // 
             // FirstDate
             // 
@@ -127,8 +127,7 @@
             this.FirstDate.Name = "FirstDate";
             this.FirstDate.Size = new System.Drawing.Size(200, 36);
             this.FirstDate.TabIndex = 9;
-            this.FirstDate.Value = new System.DateTime(2025, 8, 23, 0, 0, 0, 0);
-            this.FirstDate.ValueChanged += new System.EventHandler(this.FirstDate_ValueChanged);
+            this.FirstDate.Value = new System.DateTime(2025, 9, 3, 0, 0, 0, 0);
             // 
             // TitelLabel
             // 
@@ -139,7 +138,6 @@
             this.TitelLabel.Size = new System.Drawing.Size(121, 22);
             this.TitelLabel.TabIndex = 15;
             this.TitelLabel.Text = "2Date Соmparer";
-            this.TitelLabel.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // DateComparer
             // 

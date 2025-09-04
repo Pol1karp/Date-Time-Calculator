@@ -20,26 +20,30 @@ namespace Date_Time_Calculator
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            double inputValue = (double)AmoundOfTime.Value;
+            int inputValue = (int)AmoundOfTime.Value;
 
             string from = SecondChoice.SelectedItem.ToString();
             string to = FirstChoice.SelectedItem.ToString();
 
-            double seconds = 0;
-            if (from == "Лет") seconds = inputValue * 365.25 * 24 * 60 * 60;
-            if (from == "Месяцев") seconds = inputValue * 30.44 * 24 * 60 * 60;
-            if (from == "Дней") seconds = inputValue * 24 * 60 * 60;
-            if (from == "Часов") seconds = inputValue * 60 * 60;
-            if (from == "Минут") seconds = inputValue * 60;
+            long seconds = 0;
+            if (from == "Лет") seconds = inputValue * 365L * 24 * 60 * 60;
+            if (from == "Месяцев") seconds = inputValue * 30L * 24 * 60 * 60;
+            if (from == "Дней") seconds = inputValue * 24L * 60 * 60;
+            if (from == "Часов") seconds = inputValue * 60L * 60;
+            if (from == "Минут") seconds = inputValue * 60L;
             if (from == "Секунд") seconds = inputValue;
-            double result = 0;
-            if (to == "Лет") result = seconds / (365.25 * 24 * 60 * 60);
-            if (to == "Месяцев") result = seconds / (30.44 * 24 * 60 * 60);
-            if (to == "Дней") result = seconds / (24 * 60 * 60);
-            if (to == "Часов") result = seconds / (60 * 60);
-            if (to == "Минут") result = seconds / 60;
+
+
+            long result = 0;
+            if (to == "Лет") result = seconds / (365L * 24 * 60 * 60);
+            if (to == "Месяцев") result = seconds / (30L * 24 * 60 * 60);
+            if (to == "Дней") result = seconds / (24L * 60 * 60);
+            if (to == "Часов") result = seconds / (60L * 60);
+            if (to == "Минут") result = seconds / 60L;
             if (to == "Секунд") result = seconds;
-            OutputTextBox.Text = $"{Math.Round(result, 4)} {to}";
+
+            OutputTextBox.Text = $"{result} {to}";
         }
+
     }
 }
