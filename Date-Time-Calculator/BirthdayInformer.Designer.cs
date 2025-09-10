@@ -62,14 +62,14 @@
             this.OutputTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.OutputTextBox.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.OutputTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.OutputTextBox.Location = new System.Drawing.Point(39, 309);
+            this.OutputTextBox.Location = new System.Drawing.Point(39, 313);
             this.OutputTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OutputTextBox.Multiline = true;
             this.OutputTextBox.Name = "OutputTextBox";
             this.OutputTextBox.PlaceholderText = "";
             this.OutputTextBox.ReadOnly = true;
             this.OutputTextBox.SelectedText = "";
-            this.OutputTextBox.Size = new System.Drawing.Size(528, 270);
+            this.OutputTextBox.Size = new System.Drawing.Size(528, 248);
             this.OutputTextBox.TabIndex = 28;
             this.OutputTextBox.TextChanged += new System.EventHandler(this.OutputTextBox_TextChanged);
             // 

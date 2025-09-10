@@ -81,29 +81,31 @@ namespace Date_Time_Calculator
             string info18;
             if (until18.TotalSeconds < 0)
             {
-                TimeSpan since18 = now - eighteenth;
-                info18 = $"18 было: {since18.Days} дн., {since18.Hours} ч., {since18.Minutes} м., {since18.Seconds} с. назад.";
+
+                DateTime since18 = eighteenth;
+                info18 = $"18 было: {FormatDateDiff(since18, now)} назад.";
             }
             else
             {
-                info18 = $"До 18: {until18.Days} дн., {until18.Hours} ч., {until18.Minutes} м., {until18.Seconds} с.";
+
+                info18 = $"До 18: {FormatDateDiff(now, eighteenth)}";
             }
 
-            int targetAge = (int)InputAge.Value; 
-
+            int targetAge = (int)InputAge.Value;
             DateTime targetDate = birthDate.AddYears(targetAge);
-            TimeSpan untilTarget = targetDate - now;
 
             string infoTarget;
-            if (untilTarget.TotalSeconds < 0)
+            if (until33.TotalSeconds < 0)
             {
-                TimeSpan sinceTarget = now - targetDate;
-                infoTarget = $"{targetAge} было: {sinceTarget.Days} дн., {sinceTarget.Hours} ч., {sinceTarget.Minutes} м., {sinceTarget.Seconds} с. назад.";
+
+                infoTarget = $"{targetAge} было: {FormatDateDiff(targetDate, now)} назад.";
             }
             else
             {
-                infoTarget = $"До {targetAge}: {untilTarget.Days} дн., {untilTarget.Hours} ч., {untilTarget.Minutes} м., {untilTarget.Seconds} с.";
+
+                infoTarget = $"До {targetAge}: {FormatDateDiff(now, targetDate)}";
             }
+
 
             TimeSpan lived = now - birthDate;
             TimeSpan age = now - birthDate;
@@ -123,6 +125,30 @@ namespace Date_Time_Calculator
 
 
         }
+        private string FormatDateDiff(DateTime from, DateTime to)
+        {
+            int years = to.Year - from.Year;
+            int months = to.Month - from.Month;
+            int days = to.Day - from.Day;
+            int hours = to.Hour - from.Hour;
+            int minutes = to.Minute - from.Minute;
+            int seconds = to.Second - from.Second;
+
+            if (seconds < 0) { seconds += 60; minutes--; }
+            if (minutes < 0) { minutes += 60; hours--; }
+            if (hours < 0) { hours += 24; days--; }
+            if (days < 0)
+            {
+                months--;
+                int prevMonth = (to.Month == 1) ? 12 : to.Month - 1;
+                int prevYear = (prevMonth == 12) ? to.Year - 1 : to.Year;
+                days += DateTime.DaysInMonth(prevYear, prevMonth);
+            }
+            if (months < 0) { months += 12; years--; }
+
+            return $"{years} г., {months} мес., {days} дн., {hours} ч., {minutes} м., {seconds} с.";
+        }
+
 
 
         private void OutputTextBox_TextChanged(object sender, EventArgs e)
